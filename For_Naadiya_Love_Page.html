@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#160817">
+<title>For Naadiya ❤️</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;min-height:100svh;overflow:hidden;font-family:Georgia,'Times New Roman',serif;color:#fff;background:radial-gradient(ellipse at 50% 25%,#5b1746 0%,#29102d 42%,#100713 100%);display:grid;place-items:center}
+.glow{position:fixed;inset:0;background:radial-gradient(circle at 50% 55%,#ff2d7440,transparent 42%);pointer-events:none}
+.heart{position:fixed;bottom:-60px;color:#ff4d88;opacity:0;animation:floatUp linear infinite;filter:drop-shadow(0 0 12px #ff2d7470);pointer-events:none}
+@keyframes floatUp{0%{transform:translateY(0) rotate(0) scale(.7);opacity:0}12%{opacity:.8}85%{opacity:.65}100%{transform:translateY(-115vh) rotate(24deg) scale(1.25);opacity:0}}
+.wrap{position:relative;z-index:2;width:min(92vw,620px);text-align:center;padding:38px 25px 42px;border:1px solid #ffb4d34a;border-radius:30px;background:linear-gradient(145deg,#ffffff12,#ffffff05);box-shadow:0 20px 80px #0007,inset 0 0 40px #ff4d8810;backdrop-filter:blur(8px)}
+.bigheart{font-family:system-ui;font-size:clamp(76px,19vw,126px);line-height:1;display:inline-block;filter:drop-shadow(0 0 18px #ff3f80);animation:beat 1.25s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.12)}30%{transform:scale(1)}45%{transform:scale(1.08)}}
+.kicker{margin:18px 0 8px;color:#ffc2d8;letter-spacing:.24em;text-transform:uppercase;font:600 11px system-ui,sans-serif}
+h1{font-size:clamp(35px,9vw,58px);font-weight:normal;line-height:1.05;margin:8px 0 18px;text-shadow:0 0 24px #ff5b9b55}
+p{font-size:clamp(19px,4.8vw,25px);line-height:1.55;margin:0 auto;max-width:470px;color:#ffeaf2}
+.name{color:#ff8eb7;font-style:italic}
+.line{height:1px;width:95px;margin:24px auto;background:linear-gradient(90deg,transparent,#ff9fc3,transparent)}
+.small{font:12px system-ui,sans-serif;letter-spacing:.12em;color:#ffc2d8b8;margin-top:20px}
+.sparkle{position:fixed;color:#ffd2e2;animation:twinkle 2s ease-in-out infinite alternate;pointer-events:none}
+@keyframes twinkle{from{opacity:.2;transform:scale(.7)}to{opacity:1;transform:scale(1.2)}}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="wrap">
+  <div class="bigheart">💗</div>
+  <div class="kicker">A little message, just for you</div>
+  <h1>Naadiya,<br><span class="name">my love</span></h1>
+  <div class="line"></div>
+  <p>You're my love and the <span class="name">best thing</span> that ever happened to me. ❤️</p>
+  <p style="margin-top:12px">If I could choose a thousand times, I'd still choose you. 💞</p>
+  <div class="small">YOU HAVE MY HEART · ALWAYS ♡</div>
+</div>
+<script>
+const symbols=['♥','♡','💗','💕','❤'];
+for(let i=0;i<26;i++){const e=document.createElement('div');e.className='heart';e.textContent=symbols[Math.floor(Math.random()*symbols.length)];e.style.left=Math.random()*100+'vw';e.style.animationDuration=(7+Math.random()*10)+'s';e.style.animationDelay=(-Math.random()*16)+'s';e.style.fontSize=(18+Math.random()*36)+'px';document.body.appendChild(e)}
+for(let i=0;i<18;i++){const e=document.createElement('div');e.className='sparkle';e.textContent='✦';e.style.left=Math.random()*100+'vw';e.style.top=Math.random()*100+'vh';e.style.fontSize=(8+Math.random()*13)+'px';e.style.animationDelay=Math.random()*2+'s';document.body.appendChild(e)}
+</script>
+</body></html>
